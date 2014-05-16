@@ -1,0 +1,12 @@
+{
+  "name" : "shoelace-ui-animation-duration",
+  "version" : "0.0.1",
+  "description" : "`animation-duration` transparent mixin",
+  "repository" : "https://github.com/shoelace-ui/animation-duration.git",
+  "keywords" : ["stylus", "shoelace", "animation", "duration", "animation-duration"],
+  "author" : "Michael Andrew Vanasse <mail@mndvns.com>",
+  "license" : "MIT",
+  "dependencies": {
+    "shoelace-ui-duration": "git+https://github.com/shoelace-ui/duration.git"
+  }
+}

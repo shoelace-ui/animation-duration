@@ -1,0 +1,29 @@
+/**
+ * Module dependencies
+ */
+
+@require 'shoelace-ui-duration'
+
+/**
+ * Replace arguments in current-property
+ * with `duration--` variables, if matching.
+ *
+ * Example:
+ *
+ *   ```stylus
+ *   html {
+ *     animation-duration base
+ *   }
+ *   ```
+ *
+ *   ```css
+ *   html {
+ *     -webkit-animation-duration: 150ms;
+ *     animation-duration: 150ms;
+ *   }
+ *   ```
+ */
+
+animation-duration(time)
+  -webkit-animation-duration time = ((lookup('duration--' + time)) or time)
+  animation-duration time
